@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入font-awesome依赖 -->
+    <link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/libs/glide/glide.core.min.css">
+    <link rel="stylesheet" href="./static/libs/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>辛发实业</title>
+</head>
+<body>
+    
+    
+    <!-- 网页头部 -->
+    <header>
+        <div class="logo">辛发实业</div>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">关于我们</a>
+            <a href="#">成功案例</a>
+            <a href="#">服务流程</a>
+            <a href="#">团队介绍</a>
+            <a href="#">公司动态</a>
+            <i class="fas fa-search"></i>
+        </nav>
+        <div class="burger">
+            <div class="burger-line1"></div>
+            <div class="burger-line2"></div>
+            <div class="burger-line3"></div>
+        </div>
+    </header>
+    <div id="home" class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <!-- 轮播图一 -->
+                <div class="glide__slide">
+                    <div class="slide-caption">
+                        <h1>上海辛发实业有限公司</h1>
+                        <h3>啦啦啦啦</h3>
+                        <button class="explore-btn">探索更多</button>
+                        <div class="backdrop"></div>
+                        <img src="./static/images/people-in-couch-1024248.jpg"/>
+                    </div>
+                </div>
+                <div class="glide__slide">
+                    <div class="slide-caption">
+                        <h1>上海辛发机械配件有限公司</h1>
+                        <h3>啦啦啦啦1</h3>
+                        <button class="explore-btn">探索更多</button>
+                        <div class="backdrop"></div>
+                        <video src="./static/videos/working-man.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-el="<"><i class="fa fa-angle-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-el=">"><i class="fa fa-angle-right"></i></button>
+                <div class="glide__bullets" data-glide-el="controls[nav">
+                    <button class="glide_bullet" data-glide-dir="=0"></button>
+                    <button class="glide_bullet" data-glide-dir="=1"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入JS文件 -->
+    <script src="./static/libs/glide/glide.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
