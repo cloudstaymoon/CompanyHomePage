@@ -76,7 +76,7 @@ header .burger {
 
 .slide-caption {
   position: absolute;
-  z-index: 70;
+  z-index: 100;
   color: var(--text-color-lightest);
   text-align: center;
   max-width: 60vw;
