@@ -20,4 +20,3 @@ glide.on("run.before", ()=> {
 });
 
 glide.mount();
-glide.mount();
