@@ -128,3 +128,86 @@ header .burger {
     cursor: pointer;
     outline: none;
 }
+
+/* 内容区域 */
+/* 通用样式 */
+.content-wrapper {
+  /* 一维排版 */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  /* 二维 */
+  display: grid;
+  /* 每个列的对齐方式 */
+  justify-items: center;
+  max-width: 1080px;
+  padding: 0 80px;
+}
+
+.title1 {
+  font-size: 34px;
+  color: var(--text-color-darker);
+  
+}
+
+.title1::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin-top: 14px;
+  transform: translateX(10%);
+  
+}
+
+.intro {
+  margin: 28px 0 60px 0;
+  text-indent: 2em;
+  font-size: 18px;
+  color: var(--text-color-dark-gray);
+}
+
+/* 关于我们 */
+.about-us {
+  padding-bottom: 32px;
+}
+
+.features {
+  display: grid;
+  /* 重复几次，重复的值  1fr：容器宽度的1/3*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 126px 126px;
+  column-gap: 5vw;
+}
+
+.feature {
+  display: grid;
+  grid-template-areas: 
+    "icon title"
+    "icon content";
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.feature i.fas {
+  grid-area: icon;
+  font-size: 34px;
+  color: var(--primary-color);
+}
+
+.feature-title {
+  grid-area: title;
+  font-size: 18px;
+  color: var(--text-color-darker);
+}
+
+.feature-content {
+  grid-area: content;
+  color: var(--text-color-gray);
+  margin-top: 8px;
+}

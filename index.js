@@ -1,4 +1,8 @@
-const glide = new Glide(".glide");
+const glide = new Glide(".glide",{
+  type: 'carousel',
+  startAt: 0,
+  autoplay: 3500
+});
 const captionsEL = document.querySelectorAll(".slide-caption");
 
 
