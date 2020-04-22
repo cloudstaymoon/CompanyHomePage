@@ -1,3 +1,10 @@
+const headerEl = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  let height = h
+})
+
+
 const glide = new Glide(".glide",{
   type: 'carousel',
   startAt: 0,
