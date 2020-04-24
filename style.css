@@ -607,3 +607,53 @@ footer {
   bottom: 60px;
   right: 30px;
 }
+
+@media (max-width: 1100px) {
+  header nav {
+    display: none;
+  }
+
+  header .burger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 6px;
+    justify-self: end;
+  }
+
+  .burger-line1,
+  .burger-line2,
+  .burger-line3 {
+    width: 20px;
+    height: 2px;
+    background-color: var(--text-color-lightest);
+  }
+
+  .burger-line1 {
+    position: absolute;
+    top: -6px;
+  }
+
+  .burger-line3 {
+    position: absolute;
+    top: 6px;
+  }
+
+  header.open nav {
+    display: grid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+
+  header.open .burger-line1,
+  header.open .burger-line2,
+  header.open .burger-line3 {
+    background-color: var(--text-color-darker);
+  }
+/* 
+  header.open .logo */
+}
