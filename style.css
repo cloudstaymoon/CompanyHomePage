@@ -31,7 +31,7 @@ header {
   padding: 0 40px;
 
   grid-template-columns: 1fr 2fr;
-  align-items: center;
+  align-content: center;
   position: relative;
   z-index: 200;
 }
@@ -92,7 +92,7 @@ header.sticky nav i {
 .glide__slide img,
 .glide__slide video {
   width: 100vw;
-  height: 107vh;
+  height: 100vh;
   /* 自动等比例缩放 */
   object-fit: cover;
 }
@@ -588,6 +588,11 @@ footer {
   color: white;
 }
 
+.scroll-to-top {
+  display: none;
+  position: relative;
+  z-index: 300;
+}
 .scroll-to-top a {
   width: 32px;
   height: 32px;
