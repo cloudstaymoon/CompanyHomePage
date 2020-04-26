@@ -116,9 +116,21 @@ const scroll = new SmoothScroll(
   }
 );
 
+document.addEventListener("scrollStart", () => {
+  if(headerEl.classList.contains("open")) {
+    headerEl.classList.remove("open");
+  }
+})
+
 const exploreBtnEls = document.querySelectorAll(".explore-btn");
 exploreBtnEls.forEach((exploreBtnEl) => {
   exploreBtnEl.addEventListener("click", () => {
     scroll.animateScroll(document.querySelector("#about-us"));
   });
 });
+
+// 折叠按钮事件
+const burgerEl = document.querySelector(".burger");
+burgerEl.addEventListener("click", () => {
+  headerEl.classList.toggle("open");
+})
